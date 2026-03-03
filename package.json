@@ -1,0 +1,55 @@
+{
+  "name": "n8n-nodes-delightloop",
+  "version": "0.1.8",
+  "description": "n8n community nodes for Delightloop — manage contacts and campaigns",
+  "keywords": [
+    "n8n-community-node-package",
+    "delightloop",
+    "gifting",
+    "contacts",
+    "campaigns"
+  ],
+  "license": "MIT",
+  "homepage": "https://delightloop.ai",
+  "author": {
+    "name": "Delightloop",
+    "email": "dev@delightloop.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delightloop/n8n-nodes-delightloop.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "pnpm build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/DelightloopApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Delightloop/Delightloop.node.js",
+      "dist/nodes/DelightloopTrigger/DelightloopTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.2",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "^1.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
