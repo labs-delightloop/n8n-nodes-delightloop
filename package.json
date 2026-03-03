@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-delightloop",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "n8n community nodes for Delightloop — manage contacts and campaigns",
   "keywords": [
     "n8n-community-node-package",
