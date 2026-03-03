@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-delightloop",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "n8n community nodes for Delightloop — manage contacts and campaigns",
   "keywords": [
     "n8n-community-node-package",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/delightloop/n8n-nodes-delightloop.git"
+    "url": "git+https://github.com/labs-delightloop/n8n-nodes-delightloop.git"
   },
   "main": "index.js",
   "scripts": {
